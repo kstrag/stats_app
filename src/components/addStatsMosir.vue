@@ -7,7 +7,7 @@
         </v-layout>
         <v-layout>
             <v-flex xs12>
-                <v-layout wrap>
+                <v-layout wrap class="align-center">
                     <v-flex xs12 sm4>
                         <v-radio-group v-model="selectMatch" row>
                             <v-radio color="light-blue lighten-2" id="home" label="Mecz domowy"
@@ -36,6 +36,9 @@
                             </template>
                             <v-date-picker v-model="date" @input="menu2 = false"></v-date-picker>
                         </v-menu>
+                    </v-flex>
+                    <v-flex xs12 sm4 class="text-sm-right">
+                        <v-btn @click="onCreateMatch" large color="error"> Zakończ spotkanie</v-btn>
                     </v-flex>
                 </v-layout>
                 <v-layout>
@@ -66,121 +69,121 @@
                                     <td>{{mPlayers[index].points}}</td>
                                     <td class="stats-cell">
                                         <span class="stats">
-                                            <span @click="removeMade(1,index)" class="stats__remove">
+                                            <span @click="removeStats(1,index)" class="stats__remove">
                                                 <v-icon color="error" medium>mdi-minus-circle</v-icon>
                                             </span>
                                             <span class="stats__current">{{mPlayers[index].oneM}}</span>
-                                            <span @click="addMade(1,index)" class="stats__add">
+                                            <span @click="addStat(1,index)" class="stats__add">
                                                 <v-icon color="light-blue lighten-2" medium>mdi-plus-circle</v-icon>
                                             </span>
                                         </span>
                                     </td>
                                     <td class="stats-cell">
                                         <span class="stats">
-                                            <span @click="removeOneA(index)" class="stats__remove">
+                                            <span @click="removeStats('at1',index)"  class="stats__remove">
                                                 <v-icon color="error" medium>mdi-minus-circle</v-icon>
                                             </span>
                                             <span class="stats__current">{{mPlayers[index].oneA}}</span>
-                                            <span @click="addOneA(index)" class="stats__add">
+                                            <span @click="addStat('at1',index)" class="stats__add">
                                                 <v-icon color="light-blue lighten-2" medium>mdi-plus-circle</v-icon>
                                             </span>
                                         </span>
                                     </td>
                                     <td class="stats-cell">
                                         <span class="stats">
-                                            <span @click="removeMade(2,index)" class="stats__remove">
+                                            <span @click="removeStats(2,index)" class="stats__remove">
                                                 <v-icon color="error" medium>mdi-minus-circle</v-icon>
                                             </span>
                                             <span class="stats__current">{{mPlayers[index].twoM}}</span>
-                                            <span @click="addMade(2,index)" class="stats__add">
+                                            <span @click="addStat(2,index)" class="stats__add">
                                                 <v-icon color="light-blue lighten-2" medium>mdi-plus-circle</v-icon>
                                             </span>
                                         </span>
                                     </td>
                                     <td class="stats-cell">
                                         <span class="stats">
-                                            <span @click="removeTwoA(index)" class="stats__remove">
+                                            <span @click="removeStats('at2',index)" class="stats__remove">
                                                 <v-icon color="error" medium>mdi-minus-circle</v-icon>
                                             </span>
                                             <span class="stats__current">{{mPlayers[index].twoA}}</span>
-                                            <span @click="addTwoA(index)" class="stats__add">
+                                            <span @click="addStat('at2',index)" class="stats__add">
                                                 <v-icon color="light-blue lighten-2" medium>mdi-plus-circle</v-icon>
                                             </span>
                                         </span>
                                     </td>
                                     <td class="stats-cell">
                                         <span class="stats">
-                                            <span @click="removeMade(3,index)" class="stats__remove">
+                                            <span @click="removeStats(3,index)" class="stats__remove">
                                                 <v-icon color="error" medium>mdi-minus-circle</v-icon>
                                             </span>
                                             <span class="stats__current">{{mPlayers[index].threeM}}</span>
-                                            <span @click="addMade(3,index)" class="stats__add">
+                                            <span @click="addStat(3,index)" class="stats__add">
                                                 <v-icon color="light-blue lighten-2" medium>mdi-plus-circle</v-icon>
                                             </span>
                                         </span>
                                     </td>
                                     <td class="stats-cell">
                                         <span class="stats">
-                                            <span @click="removeThreeA(index)" class="stats__remove">
+                                            <span @click="removeStats('at3',index)" class="stats__remove">
                                                 <v-icon color="error" medium>mdi-minus-circle</v-icon>
                                             </span>
                                             <span class="stats__current">{{mPlayers[index].threeA}}</span>
-                                            <span @click="addThreeA(index)" class="stats__add">
+                                            <span @click="addStat('at3',index)" class="stats__add">
                                                 <v-icon color="light-blue lighten-2" medium>mdi-plus-circle</v-icon>
                                             </span>
                                         </span>
                                     </td>
                                     <td class="stats-cell">
                                         <span class="stats">
-                                            <span class="stats__remove">
+                                            <span @click="removeStats('assist', index)" class="stats__remove">
                                                 <v-icon color="error" medium>mdi-minus-circle</v-icon>
                                             </span>
                                             <span class="stats__current">{{mPlayers[index].assist}}</span>
-                                            <span @click="add(assist, index)" class="stats__add">
+                                            <span @click="addStat('assist', index)" class="stats__add">
                                                 <v-icon color="light-blue lighten-2" medium>mdi-plus-circle</v-icon>
                                             </span>
                                         </span>
                                     </td>
                                     <td class="stats-cell">
                                         <span class="stats">
-                                            <span class="stats__remove">
+                                            <span @click="removeStats('fouls', index)" class="stats__remove">
                                                 <v-icon color="error" medium>mdi-minus-circle</v-icon>
                                             </span>
                                             <span class="stats__current">{{mPlayers[index].fouls}}</span>
-                                            <span class="stats__add">
+                                            <span @click="addStat('fouls', index)" class="stats__add">
                                                 <v-icon color="light-blue lighten-2" medium>mdi-plus-circle</v-icon>
                                             </span>
                                         </span>
                                     </td>
                                     <td class="stats-cell">
                                         <span class="stats">
-                                            <span class="stats__remove">
+                                            <span @click="removeStats('turnovers', index)" class="stats__remove">
                                                 <v-icon color="error" medium>mdi-minus-circle</v-icon>
                                             </span>
                                             <span class="stats__current">{{mPlayers[index].turnovers}}</span>
-                                            <span class="stats__add">
+                                            <span @click="addStat('turnovers', index)" class="stats__add">
                                                 <v-icon color="light-blue lighten-2" medium>mdi-plus-circle</v-icon>
                                             </span>
                                         </span>
                                     </td>
                                     <td class="stats-cell">
                                         <span class="stats">
-                                            <span class="stats__remove">
+                                            <span @click="removeStats('dRebs', index)" class="stats__remove">
                                                 <v-icon color="error" medium>mdi-minus-circle</v-icon>
                                             </span>
                                             <span class="stats__current">{{mPlayers[index].dReb}}</span>
-                                            <span class="stats__add">
+                                            <span @click="addStat('dRebs', index)" class="stats__add">
                                                 <v-icon color="light-blue lighten-2" medium>mdi-plus-circle</v-icon>
                                             </span>
                                         </span>
                                     </td>
                                     <td class="stats-cell">
                                         <span class="stats">
-                                            <span class="stats__remove">
+                                            <span  @click="removeStats('oRebs', index)" class="stats__remove">
                                                 <v-icon color="error" medium>mdi-minus-circle</v-icon>
                                             </span>
                                             <span class="stats__current">{{mPlayers[index].ofReb}}</span>
-                                            <span class="stats__add">
+                                            <span  @click="addStat('oRebs', index)" class="stats__add">
                                                 <v-icon color="light-blue lighten-2" medium>mdi-plus-circle</v-icon>
                                             </span>
                                         </span>
@@ -205,9 +208,9 @@
                         </v-simple-table>
                     </v-flex>
                 </v-layout>
-
             </v-flex>
         </v-layout>
+        {{selectMatch}}
     </v-container>
 </template>
 
@@ -217,7 +220,7 @@
 
         data: () => ({
             menu2: false,
-            selectMatch: '',
+            selectMatch: null,
             date: '',
             points: 0,
             oneM: 0,
@@ -420,79 +423,144 @@
         computed: {
             players() {
                 return this.$store.state.players
-            }
+            },
         },
         methods:{
-            addMade: function (points, id) {
-                this.points += points,
-                this.mPlayers[id].points += points
-                if(points === 1){
-                    this.oneM++,
+            addStat: function (prop, id) {
+                if(prop === 1){
+                    this.points += prop,
+                        this.mPlayers[id].points += prop,
+                        this.oneM++,
                         this.oneA++,
                         this.mPlayers[id].oneM++,
                         this.mPlayers[id].oneA++
                 }
-                else if( points === 2){
-                    this.twoM++,
+                else if( prop === 2){
+                    this.points += prop,
+                        this.mPlayers[id].points += prop,
+                        this.twoM++,
                         this.twoA++,
                         this.mPlayers[id].twoM++,
                         this.mPlayers[id].twoA++
                 }
-                else{
-                    this.threeM++,
+                else if( prop === 3){
+                    this.points += prop,
+                        this.mPlayers[id].points += prop,
+                        this.threeM++,
                         this.threeA++,
                         this.mPlayers[id].threeM++,
                         this.mPlayers[id].threeA++
                 }
+                else if (prop === 'at1'){
+                    this.oneA++,
+                        this.mPlayers[id].oneA++
+                }
+                else if (prop === 'at2'){
+                    this.twoA++,
+                        this.mPlayers[id].twoA++
+                }
+                else if (prop === 'at3'){
+                    this.threeA++,
+                        this.mPlayers[id].threeA++
+                }
+                else if (prop === 'assist'){
+                    this.assist++,
+                        this.mPlayers[id].assist++
+                }
+                else if (prop === 'fouls'){
+                    this.fouls++,
+                        this.mPlayers[id].fouls++
+                }
+                else if (prop === 'turnovers'){
+                    this.turnovers++,
+                        this.mPlayers[id].turnovers++
+                }
+                else if (prop === 'dRebs'){
+                    this.dReb++,
+                        this.mPlayers[id].dReb++
+                }
+                else if (prop === 'oRebs'){
+                    this.ofReb++,
+                        this.mPlayers[id].ofReb++
+                }
             },
-            removeMade: function (points, id) {
-                this.points -= points,
-                this.mPlayers[id].points -= points
-                if(points === 1){
-                    this.oneM--,
+            removeStats: function (prop, id) {
+                if(prop === 1){
+                    this.points -= prop,
+                        this.mPlayers[id].points -= prop,
+                        this.oneM--,
                         this.oneA--,
                         this.mPlayers[id].oneM--,
                         this.mPlayers[id].oneA--
                 }
-                else if( points === 2){
-                    this.twoM--,
+                else if( prop === 2){
+                    this.points -= prop,
+                        this.mPlayers[id].points -= prop,
+                        this.twoM--,
                         this.twoA--,
                         this.mPlayers[id].twoM--,
                         this.mPlayers[id].twoA--
                 }
-                else{
-                    this.threeM--,
+                else if( prop === 3){
+                    this.points -= prop,
+                        this.mPlayers[id].points -= prop,
+                        this.threeM--,
                         this.threeA--,
                         this.mPlayers[id].threeM--,
                         this.mPlayers[id].threeA--
                 }
+                else if (prop === 'at1'){
+                    this.oneA--,
+                        this.mPlayers[id].oneA--
+                }
+                else if (prop === 'at2'){
+                    this.twoA--,
+                        this.mPlayers[id].twoA--
+                }
+                else if (prop === 'at3'){
+                    this.threeA--,
+                        this.mPlayers[id].threeA--
+                }
+                else if (prop === 'assist'){
+                    this.assist--,
+                        this.mPlayers[id].assist--
+                }
+                else if (prop === 'fouls'){
+                    this.fouls--,
+                        this.mPlayers[id].fouls--
+                }
+                else if (prop === 'turnovers'){
+                    this.turnovers--,
+                        this.mPlayers[id].turnovers--
+                }
+                else if (prop === 'dRebs'){
+                    this.dReb--,
+                        this.mPlayers[id].dReb--
+                }
+                else if (prop === 'oRebs'){
+                    this.ofReb--,
+                        this.mPlayers[id].ofReb--
+                }
             },
-
-            addOneA: function (id) {
-                this.oneA++,
-                this.mPlayers[id].oneA++
-            },
-            removeOneA: function (id) {
-                this.oneA--,
-                this.mPlayers[id].oneA--
-            },
-
-            addTwoA: function (id) {
-                this.twoA++,
-                this.mPlayers[id].twoA++
-            },
-            removeTwoA: function (id) {
-                this.twoA--,
-                this.mPlayers[id].twoA--
-            },
-
-            addThreeA: function (id) {
-                this.threeA++,
-                this.mPlayers[id].threeA++
-            },
-            removeThreeA: function (id) {
-                this.threeA--,
-                this.mPlayers[id].threeA--
+            onCreateMatch:function () {
+                const mosirGameData = {
+                    selectMatch:this.selectMatch,
+                    date:this.date,
+                    points:this.points,
+                    oneM:this.oneM,
+                    oneA:this.oneA,
+                    twoM:this.twoM,
+                    twoA:this.twoA,
+                    threeM:this.threeM,
+                    threeA:this.threeA,
+                    assist:this.assist,
+                    fouls:this.fouls,
+                    turnovers:this.turnovers,
+                    dReb:this.dReb,
+                    ofReb:this.ofReb,
+                    mPlayers:this.mPlayers
+                }
+                this.$store.dispatch('CREATE_MATCH', mosirGameData)
             }
         }
     };
@@ -507,7 +575,6 @@
         }
     }
     .v-data-table{
-        height: 300px;
         td{
             &.stats-cell{
                 min-width: 135px

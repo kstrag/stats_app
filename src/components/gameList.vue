@@ -19,9 +19,9 @@
                                     </v-flex>
                                     <v-flex md4 class="score">
                                         <div class="score__box">
-                                            <span class="score__points">{{game.mosir.team.points}}</span>
+                                            <span class="score__points">{{game.mosir.points}}</span>
                                             <span>-</span>
-                                            <span class="score__points">{{game.opponent.team.points}}</span>
+                                            <span class="score__points">{{game.opponent.points}}</span>
                                         </div>
                                     </v-flex>
                                     <v-flex md4>
@@ -43,9 +43,9 @@
                                     </v-flex>
                                     <v-flex md4 class="score">
                                         <div class="score__box">
-                                            <span class="score__points">{{game.opponent.team.points}}</span>
+                                            <span class="score__points">{{game.opponent.points}}</span>
                                             <span>-</span>
-                                            <span class="score__points">{{game.mosir.team.points}}</span>
+                                            <span class="score__points">{{game.mosir.points}}</span>
                                         </div>
                                     </v-flex>
 

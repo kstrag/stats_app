@@ -27,930 +27,484 @@ export default new Vuex.Store({
                 id: 1,
                 category: 'homeGame',
                 date: '12.06.19',
-                team: {
-                    points: 60,
-                    shots: {
-                        oneM: 9,
-                        oneA: 13,
-                        twoM: 30,
-                        twoA: 45,
-                        threeM: 9,
-                        threeA: 22
-                    },
-                    assist: 14,
-                    fouls: 18,
-                    turnovers: 6,
-                    rebounds: {
-                        dReb: 12,
-                        ofReb: 5,
-                    }
-                },
+                points: 60,
+                oneM: 9,
+                oneA: 13,
+                twoM: 30,
+                twoA: 45,
+                threeM: 9,
+                threeA: 22,
+                assist: 14,
+                fouls: 18,
+                turnovers: 6,
+                dReb: 12,
+                ofReb: 5,
                 players: [
                     {
                         points: 10,
-                        shots: {
-                            oneM: 2,
-                            oneA: 3,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 4
-                        },
+                        oneM: 2,
+                        oneA: 3,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 4,
                         assist: 1,
                         fouls: 3,
                         turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 7,
-                        }
+                        dReb: 2,
+                        ofReb: 7,
                     },
                     {
-                        points: 12,
-                        shots: {
-                            oneM: 4,
-                            oneA: 4,
-                            twoM: 5,
-                            twoA: 7,
-                            threeM: 2,
-                            threeA: 4
-                        },
+                        points: 15,
+                        oneM: 3,
+                        oneA: 5,
+                        twoM: 4,
+                        twoA: 8,
+                        threeM: 1,
+                        threeA: 4,
                         assist: 2,
+                        fouls: 1,
+                        turnovers: 2,
+                        dReb: 3,
+                        ofReb: 5,
+                    },
+                    {
+                        points: 8,
+                        oneM: 1,
+                        oneA: 2,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 5,
+                        assist: 4,
                         fouls: 3,
-                        turnovers: 3,
-                        rebounds: {
-                            dReb: 5,
-                            ofReb: 2,
-                        }
+                        turnovers: 5,
+                        dReb: 1,
+                        ofReb: 1,
                     },
                     {
                         points: 10,
-                        shots: {
-                            oneM: 3,
-                            oneA: 4,
-                            twoM: 2,
-                            twoA: 7,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 2,
-                        turnovers: 1,
-                        rebounds: {
-                            dReb: 1,
-                            ofReb: 1,
-                        }
-                    },
-                    {
-                        points: 2,
-                        shots: {
-                            oneM: 0,
-                            oneA: 0,
-                            twoM: 1,
-                            twoA: 2,
-                            threeM: 0,
-                            threeA: 0
-                        },
-                        assist: 0,
-                        fouls: 1,
-                        turnovers: 0,
-                        rebounds: {
-                            dReb: 0,
-                            ofReb: 0,
-                        }
-                    },
-                    {
-                        points: 6,
-                        shots: {
-                            oneM: 1,
-                            oneA: 2,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 1,
-                        turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 2,
-                        }
-                    },
-                    {
-                        points: 10,
-                        shots: {
-                            oneM: 2,
-                            oneA: 3,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 4
-                        },
+                        oneM: 2,
+                        oneA: 3,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 4,
                         assist: 1,
                         fouls: 3,
                         turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 7,
-                        }
+                        dReb: 2,
+                        ofReb: 7,
                     },
                     {
-                        points: 12,
-                        shots: {
-                            oneM: 4,
-                            oneA: 4,
-                            twoM: 5,
-                            twoA: 7,
-                            threeM: 2,
-                            threeA: 4
-                        },
+                        points: 15,
+                        oneM: 3,
+                        oneA: 5,
+                        twoM: 4,
+                        twoA: 8,
+                        threeM: 1,
+                        threeA: 4,
                         assist: 2,
+                        fouls: 1,
+                        turnovers: 2,
+                        dReb: 3,
+                        ofReb: 5,
+                    },
+                    {
+                        points: 8,
+                        oneM: 1,
+                        oneA: 2,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 5,
+                        assist: 4,
                         fouls: 3,
-                        turnovers: 3,
-                        rebounds: {
-                            dReb: 5,
-                            ofReb: 2,
-                        }
+                        turnovers: 5,
+                        dReb: 1,
+                        ofReb: 1,
                     },
                     {
                         points: 10,
-                        shots: {
-                            oneM: 3,
-                            oneA: 4,
-                            twoM: 2,
-                            twoA: 7,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 2,
-                        turnovers: 1,
-                        rebounds: {
-                            dReb: 1,
-                            ofReb: 1,
-                        }
-                    },
-                    {
-                        points: 2,
-                        shots: {
-                            oneM: 0,
-                            oneA: 0,
-                            twoM: 1,
-                            twoA: 2,
-                            threeM: 0,
-                            threeA: 0
-                        },
-                        assist: 0,
-                        fouls: 1,
-                        turnovers: 0,
-                        rebounds: {
-                            dReb: 0,
-                            ofReb: 0,
-                        }
-                    },
-                    {
-                        points: 6,
-                        shots: {
-                            oneM: 1,
-                            oneA: 2,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 1,
-                        turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 2,
-                        }
-                    },
-                    {
-                        points: 2,
-                        shots: {
-                            oneM: 0,
-                            oneA: 0,
-                            twoM: 1,
-                            twoA: 2,
-                            threeM: 0,
-                            threeA: 0
-                        },
-                        assist: 0,
-                        fouls: 1,
-                        turnovers: 0,
-                        rebounds: {
-                            dReb: 0,
-                            ofReb: 0,
-                        }
-                    },
-                    {
-                        points: 6,
-                        shots: {
-                            oneM: 1,
-                            oneA: 2,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 1,
-                        turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 2,
-                        }
-                    },
-                    {
-                        points: 10,
-                        shots: {
-                            oneM: 2,
-                            oneA: 3,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 4
-                        },
+                        oneM: 2,
+                        oneA: 3,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 4,
                         assist: 1,
                         fouls: 3,
                         turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 7,
-                        }
+                        dReb: 2,
+                        ofReb: 7,
                     },
                     {
-                        points: 12,
-                        shots: {
-                            oneM: 4,
-                            oneA: 4,
-                            twoM: 5,
-                            twoA: 7,
-                            threeM: 2,
-                            threeA: 4
-                        },
+                        points: 15,
+                        oneM: 3,
+                        oneA: 5,
+                        twoM: 4,
+                        twoA: 8,
+                        threeM: 1,
+                        threeA: 4,
                         assist: 2,
-                        fouls: 3,
-                        turnovers: 3,
-                        rebounds: {
-                            dReb: 5,
-                            ofReb: 2,
-                        }
+                        fouls: 1,
+                        turnovers: 2,
+                        dReb: 3,
+                        ofReb: 5,
                     },
-
+                    {
+                        points: 8,
+                        oneM: 1,
+                        oneA: 2,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 5,
+                        assist: 4,
+                        fouls: 3,
+                        turnovers: 5,
+                        dReb: 1,
+                        ofReb: 1,
+                    },
+                    {
+                        points: 10,
+                        oneM: 2,
+                        oneA: 3,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 4,
+                        assist: 1,
+                        fouls: 3,
+                        turnovers: 2,
+                        dReb: 2,
+                        ofReb: 7,
+                    },
+                    {
+                        points: 15,
+                        oneM: 3,
+                        oneA: 5,
+                        twoM: 4,
+                        twoA: 8,
+                        threeM: 1,
+                        threeA: 4,
+                        assist: 2,
+                        fouls: 1,
+                        turnovers: 2,
+                        dReb: 3,
+                        ofReb: 5,
+                    },
+                    {
+                        points: 8,
+                        oneM: 1,
+                        oneA: 2,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 5,
+                        assist: 4,
+                        fouls: 3,
+                        turnovers: 5,
+                        dReb: 1,
+                        ofReb: 1,
+                    },
+                    {
+                        points: 10,
+                        oneM: 2,
+                        oneA: 3,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 4,
+                        assist: 1,
+                        fouls: 3,
+                        turnovers: 2,
+                        dReb: 2,
+                        ofReb: 7,
+                    },
+                    {
+                        points: 15,
+                        oneM: 3,
+                        oneA: 5,
+                        twoM: 4,
+                        twoA: 8,
+                        threeM: 1,
+                        threeA: 4,
+                        assist: 2,
+                        fouls: 1,
+                        turnovers: 2,
+                        dReb: 3,
+                        ofReb: 5,
+                    },
                 ]
+
             },
             {
                 id: 2,
                 category: 'awayGame',
-                date: '12.06.19',
-                team: {
-                    points: 60,
-                    shots: {
-                        oneM: 9,
-                        oneA: 13,
-                        twoM: 32,
-                        twoA: 45,
-                        threeM: 9,
-                        threeA: 22
-                    },
-                    assist: 14,
-                    fouls: 18,
-                    turnovers: 6,
-                    rebounds: {
-                        dReb: 12,
-                        ofReb: 5,
-                    }
-                },
+                date: '16.08.19',
+                points: 48,
+                oneM: 9,
+                oneA: 13,
+                twoM: 30,
+                twoA: 45,
+                threeM: 9,
+                threeA: 22,
+                assist: 14,
+                fouls: 18,
+                turnovers: 6,
+                dReb: 12,
+                ofReb: 5,
                 players: [
                     {
-                        id: 1,
                         points: 10,
-                        shots: {
-                            oneM: 2,
-                            oneA: 3,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 4
-                        },
+                        oneM: 2,
+                        oneA: 3,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 4,
                         assist: 1,
                         fouls: 3,
                         turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 7,
-                        }
+                        dReb: 2,
+                        ofReb: 7,
                     },
                     {
-                        id: 2,
-                        points: 12,
-                        shots: {
-                            oneM: 4,
-                            oneA: 4,
-                            twoM: 5,
-                            twoA: 7,
-                            threeM: 2,
-                            threeA: 4
-                        },
+                        points: 15,
+                        oneM: 3,
+                        oneA: 5,
+                        twoM: 4,
+                        twoA: 8,
+                        threeM: 1,
+                        threeA: 4,
                         assist: 2,
-                        fouls: 3,
-                        turnovers: 3,
-                        rebounds: {
-                            dReb: 5,
-                            ofReb: 2,
-                        }
-                    },
-                    {
-                        id: 3,
-                        points: 10,
-                        shots: {
-                            oneM: 3,
-                            oneA: 4,
-                            twoM: 2,
-                            twoA: 7,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 2,
-                        turnovers: 1,
-                        rebounds: {
-                            dReb: 1,
-                            ofReb: 1,
-                        }
-                    },
-                    {
-                        id: 4,
-                        points: 2,
-                        shots: {
-                            oneM: 0,
-                            oneA: 0,
-                            twoM: 1,
-                            twoA: 2,
-                            threeM: 0,
-                            threeA: 0
-                        },
-                        assist: 0,
-                        fouls: 1,
-                        turnovers: 0,
-                        rebounds: {
-                            dReb: 0,
-                            ofReb: 0,
-                        }
-                    },
-                    {
-                        id: 5,
-                        points: 6,
-                        shots: {
-                            oneM: 1,
-                            oneA: 2,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
                         fouls: 1,
                         turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 2,
-                        }
+                        dReb: 3,
+                        ofReb: 5,
                     },
                     {
-                        id: 6,
+                        points: 8,
+                        oneM: 1,
+                        oneA: 2,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 5,
+                        assist: 4,
+                        fouls: 3,
+                        turnovers: 5,
+                        dReb: 1,
+                        ofReb: 1,
+                    },
+                    {
                         points: 10,
-                        shots: {
-                            oneM: 2,
-                            oneA: 3,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 4
-                        },
+                        oneM: 2,
+                        oneA: 3,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 4,
                         assist: 1,
                         fouls: 3,
                         turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 7,
-                        }
+                        dReb: 2,
+                        ofReb: 7,
                     },
                     {
-                        id: 7,
-                        points: 12,
-                        shots: {
-                            oneM: 4,
-                            oneA: 4,
-                            twoM: 5,
-                            twoA: 7,
-                            threeM: 2,
-                            threeA: 4
-                        },
+                        points: 15,
+                        oneM: 3,
+                        oneA: 5,
+                        twoM: 4,
+                        twoA: 8,
+                        threeM: 1,
+                        threeA: 4,
                         assist: 2,
+                        fouls: 1,
+                        turnovers: 2,
+                        dReb: 3,
+                        ofReb: 5,
+                    },
+                    {
+                        points: 8,
+                        oneM: 1,
+                        oneA: 2,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 5,
+                        assist: 4,
                         fouls: 3,
-                        turnovers: 3,
-                        rebounds: {
-                            dReb: 5,
-                            ofReb: 2,
-                        }
+                        turnovers: 5,
+                        dReb: 1,
+                        ofReb: 1,
                     },
                     {
-                        id: 8,
                         points: 10,
-                        shots: {
-                            oneM: 3,
-                            oneA: 4,
-                            twoM: 2,
-                            twoA: 7,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 2,
-                        turnovers: 1,
-                        rebounds: {
-                            dReb: 1,
-                            ofReb: 1,
-                        }
-                    },
-                    {
-                        id: 9,
-                        points: 2,
-                        shots: {
-                            oneM: 0,
-                            oneA: 0,
-                            twoM: 1,
-                            twoA: 2,
-                            threeM: 0,
-                            threeA: 0
-                        },
-                        assist: 0,
-                        fouls: 1,
-                        turnovers: 0,
-                        rebounds: {
-                            dReb: 0,
-                            ofReb: 0,
-                        }
-                    },
-                    {
-                        id: 10,
-                        points: 6,
-                        shots: {
-                            oneM: 1,
-                            oneA: 2,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 1,
-                        turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 2,
-                        }
-                    },
-                    {
-                        id: 11,
-                        points: 2,
-                        shots: {
-                            oneM: 0,
-                            oneA: 0,
-                            twoM: 1,
-                            twoA: 2,
-                            threeM: 0,
-                            threeA: 0
-                        },
-                        assist: 0,
-                        fouls: 1,
-                        turnovers: 0,
-                        rebounds: {
-                            dReb: 0,
-                            ofReb: 0,
-                        }
-                    },
-                    {
-                        id: 12,
-                        points: 6,
-                        shots: {
-                            oneM: 1,
-                            oneA: 2,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 1,
-                        turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 2,
-                        }
-                    },
-                    {
-                        id: 13,
-                        points: 10,
-                        shots: {
-                            oneM: 2,
-                            oneA: 3,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 4
-                        },
+                        oneM: 2,
+                        oneA: 3,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 4,
                         assist: 1,
                         fouls: 3,
                         turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 7,
-                        }
+                        dReb: 2,
+                        ofReb: 7,
                     },
                     {
-                        id: 14,
-                        points: 12,
-                        shots: {
-                            oneM: 4,
-                            oneA: 4,
-                            twoM: 5,
-                            twoA: 7,
-                            threeM: 2,
-                            threeA: 4
-                        },
+                        points: 15,
+                        oneM: 3,
+                        oneA: 5,
+                        twoM: 4,
+                        twoA: 8,
+                        threeM: 1,
+                        threeA: 4,
                         assist: 2,
+                        fouls: 1,
+                        turnovers: 2,
+                        dReb: 3,
+                        ofReb: 5,
+                    },
+                    {
+                        points: 8,
+                        oneM: 1,
+                        oneA: 2,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 5,
+                        assist: 4,
                         fouls: 3,
-                        turnovers: 3,
-                        rebounds: {
-                            dReb: 5,
-                            ofReb: 2,
-                        }
+                        turnovers: 5,
+                        dReb: 1,
+                        ofReb: 1,
+                    },
+                    {
+                        points: 10,
+                        oneM: 2,
+                        oneA: 3,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 4,
+                        assist: 1,
+                        fouls: 3,
+                        turnovers: 2,
+                        dReb: 2,
+                        ofReb: 7,
+                    },
+                    {
+                        points: 15,
+                        oneM: 3,
+                        oneA: 5,
+                        twoM: 4,
+                        twoA: 8,
+                        threeM: 1,
+                        threeA: 4,
+                        assist: 2,
+                        fouls: 1,
+                        turnovers: 2,
+                        dReb: 3,
+                        ofReb: 5,
+                    },
+                    {
+                        points: 8,
+                        oneM: 1,
+                        oneA: 2,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 5,
+                        assist: 4,
+                        fouls: 3,
+                        turnovers: 5,
+                        dReb: 1,
+                        ofReb: 1,
+                    },
+                    {
+                        points: 10,
+                        oneM: 2,
+                        oneA: 3,
+                        twoM: 2,
+                        twoA: 5,
+                        threeM: 1,
+                        threeA: 4,
+                        assist: 1,
+                        fouls: 3,
+                        turnovers: 2,
+                        dReb: 2,
+                        ofReb: 7,
+                    },
+                    {
+                        points: 15,
+                        oneM: 3,
+                        oneA: 5,
+                        twoM: 4,
+                        twoA: 8,
+                        threeM: 1,
+                        threeA: 4,
+                        assist: 2,
+                        fouls: 1,
+                        turnovers: 2,
+                        dReb: 3,
+                        ofReb: 5,
                     },
                 ]
 
             },
-            {
-                id: 3,
-                category: 'homeGame',
-                date: '12.06.19',
-                team: {
-                    points: 60,
-                    shots: {
-                        oneM: 9,
-                        oneA: 13,
-                        twoM: 32,
-                        twoA: 40,
-                        threeM: 9,
-                        threeA: 25
-                    },
-                    assist: 14,
-                    fouls: 18,
-                    turnovers: 6,
-                    rebounds: {
-                        dReb: 12,
-                        ofReb: 5,
-                    }
-                },
-                players: [
-                    {
-                        id: 1,
-                        points: 10,
-                        shots: {
-                            oneM: 2,
-                            oneA: 3,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 4
-                        },
-                        assist: 1,
-                        fouls: 3,
-                        turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 7,
-                        }
-                    },
-                    {
-                        id: 2,
-                        points: 12,
-                        shots: {
-                            oneM: 4,
-                            oneA: 4,
-                            twoM: 5,
-                            twoA: 7,
-                            threeM: 2,
-                            threeA: 4
-                        },
-                        assist: 2,
-                        fouls: 3,
-                        turnovers: 3,
-                        rebounds: {
-                            dReb: 5,
-                            ofReb: 2,
-                        }
-                    },
-                    {
-                        id: 3,
-                        points: 10,
-                        shots: {
-                            oneM: 3,
-                            oneA: 4,
-                            twoM: 2,
-                            twoA: 7,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 2,
-                        turnovers: 1,
-                        rebounds: {
-                            dReb: 1,
-                            ofReb: 1,
-                        }
-                    },
-                    {
-                        id: 4,
-                        points: 2,
-                        shots: {
-                            oneM: 0,
-                            oneA: 0,
-                            twoM: 1,
-                            twoA: 2,
-                            threeM: 0,
-                            threeA: 0
-                        },
-                        assist: 0,
-                        fouls: 1,
-                        turnovers: 0,
-                        rebounds: {
-                            dReb: 0,
-                            ofReb: 0,
-                        }
-                    },
-                    {
-                        id: 5,
-                        points: 6,
-                        shots: {
-                            oneM: 1,
-                            oneA: 2,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 1,
-                        turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 2,
-                        }
-                    },
-                    {
-                        id: 6,
-                        points: 10,
-                        shots: {
-                            oneM: 2,
-                            oneA: 3,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 4
-                        },
-                        assist: 1,
-                        fouls: 3,
-                        turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 7,
-                        }
-                    },
-                    {
-                        id: 7,
-                        points: 12,
-                        shots: {
-                            oneM: 4,
-                            oneA: 4,
-                            twoM: 5,
-                            twoA: 7,
-                            threeM: 2,
-                            threeA: 4
-                        },
-                        assist: 2,
-                        fouls: 3,
-                        turnovers: 3,
-                        rebounds: {
-                            dReb: 5,
-                            ofReb: 2,
-                        }
-                    },
-                    {
-                        id: 8,
-                        points: 10,
-                        shots: {
-                            oneM: 3,
-                            oneA: 4,
-                            twoM: 2,
-                            twoA: 7,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 2,
-                        turnovers: 1,
-                        rebounds: {
-                            dReb: 1,
-                            ofReb: 1,
-                        }
-                    },
-                    {
-                        id: 9,
-                        points: 2,
-                        shots: {
-                            oneM: 0,
-                            oneA: 0,
-                            twoM: 1,
-                            twoA: 2,
-                            threeM: 0,
-                            threeA: 0
-                        },
-                        assist: 0,
-                        fouls: 1,
-                        turnovers: 0,
-                        rebounds: {
-                            dReb: 0,
-                            ofReb: 0,
-                        }
-                    },
-                    {
-                        id: 10,
-                        points: 6,
-                        shots: {
-                            oneM: 1,
-                            oneA: 2,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 1,
-                        turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 2,
-                        }
-                    },
-                    {
-                        id: 11,
-                        points: 2,
-                        shots: {
-                            oneM: 0,
-                            oneA: 0,
-                            twoM: 1,
-                            twoA: 2,
-                            threeM: 0,
-                            threeA: 0
-                        },
-                        assist: 0,
-                        fouls: 1,
-                        turnovers: 0,
-                        rebounds: {
-                            dReb: 0,
-                            ofReb: 0,
-                        }
-                    },
-                    {
-                        id: 12,
-                        points: 6,
-                        shots: {
-                            oneM: 1,
-                            oneA: 2,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 3
-                        },
-                        assist: 1,
-                        fouls: 1,
-                        turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 2,
-                        }
-                    },
-                    {
-                        id: 13,
-                        points: 10,
-                        shots: {
-                            oneM: 2,
-                            oneA: 3,
-                            twoM: 2,
-                            twoA: 5,
-                            threeM: 1,
-                            threeA: 4
-                        },
-                        assist: 1,
-                        fouls: 3,
-                        turnovers: 2,
-                        rebounds: {
-                            dReb: 2,
-                            ofReb: 7,
-                        }
-                    },
-                    {
-                        id: 14,
-                        points: 12,
-                        shots: {
-                            oneM: 4,
-                            oneA: 4,
-                            twoM: 5,
-                            twoA: 7,
-                            threeM: 2,
-                            threeA: 4
-                        },
-                        assist: 2,
-                        fouls: 3,
-                        turnovers: 3,
-                        rebounds: {
-                            dReb: 5,
-                            ofReb: 2,
-                        }
-                    },
-                ]
-            }
         ],
         oppGames: [
             {
                 id: 1,
                 name: 'Niepołomice',
-                team: {
-                    points: 44,
-                    shots: {
-                        oneM: 9,
-                        oneA: 13,
-                        twoM: 32,
-                        twoA: 40,
-                        threeM: 9,
-                        threeA: 25
-                    },
-                    assist: 14,
-                    fouls: 18,
-                    turnovers: 6,
-                    rebounds: {
-                        dReb: 7,
-                        ofReb: 6,
-                    }
-                }
+                points: 42,
+                oneM: 9,
+                oneA: 13,
+                twoM: 32,
+                twoA: 40,
+                threeM: 9,
+                threeA: 25,
+                assist: 14,
+                fouls: 18,
+                turnovers: 6,
+                dReb: 7,
+                ofReb: 6,
             },
             {
                 id: 2,
                 name: 'Wisła Canpak',
-                team: {
-                    points: 48,
-                    shots: {
-                        oneM: 9,
-                        oneA: 13,
-                        twoM: 32,
-                        twoA: 40,
-                        threeM: 9,
-                        threeA: 25
-                    },
-                    assist: 14,
-                    fouls: 18,
-                    turnovers: 6,
-                    rebounds: {
-                        dReb: 12,
-                        ofReb: 5,
-                    }
-                }
+                points: 59,
+                oneM: 9,
+                oneA: 13,
+                twoM: 32,
+                twoA: 40,
+                threeM: 9,
+                threeA: 25,
+                assist: 14,
+                fouls: 18,
+                turnovers: 6,
+                dReb: 7,
+                ofReb: 6,
+
             },
             {
                 id: 3,
                 name: 'Testowa drużyna',
-                team: {
-                    points: 53,
-                    shots: {
-                        oneM: 7,
-                        oneA: 13,
-                        twoM: 32,
-                        twoA: 40,
-                        threeM: 8,
-                        threeA: 25
-                    },
-                    assist: 14,
-                    fouls: 18,
-                    turnovers: 6,
-                    rebounds: {
-                        dReb: 12,
-                        ofReb: 5,
-                    }
-                }
+                points: 47,
+                oneM: 9,
+                oneA: 13,
+                twoM: 32,
+                twoA: 40,
+                threeM: 9,
+                threeA: 25,
+                assist: 14,
+                fouls: 18,
+                turnovers: 6,
+                dReb: 7,
+                ofReb: 6,
             }
         ]
     },
@@ -963,31 +517,31 @@ export default new Vuex.Store({
                 }
             })
         },
-        playerStats(state){
-          return state.mosirGames[0].players.map((playersStats, i) =>{
-              return {
-                  playersStats : playersStats,
-                  players: state.players[i]
-              }
-          })
+        playerStats(state) {
+            return state.mosirGames[0].players.map((playersStats, i) => {
+                return {
+                    playersStats: playersStats,
+                    players: state.players[i]
+                }
+            })
         },
         mRebs(state) {
-            return state.mosirGames[0].team.rebounds.dReb + state.mosirGames[0].team.rebounds.ofReb
+            return state.mosirGames[0].dReb + state.mosirGames[0].ofReb
         },
         oRebs(state) {
-            return state.oppGames[0].team.rebounds.dReb + state.oppGames[0].team.rebounds.ofReb
+            return state.oppGames[0].dReb + state.oppGames[0].ofReb
         },
         mFGM(state) {
-            return state.mosirGames[0].team.shots.twoM + state.mosirGames[0].team.shots.threeM
+            return state.mosirGames[0].twoM + state.mosirGames[0].threeM
         },
         oFGM(state) {
-            return state.oppGames[0].team.shots.twoM + state.oppGames[0].team.shots.threeM
+            return state.oppGames[0].twoM + state.oppGames[0].threeM
         },
         mFGA(state) {
-            return state.mosirGames[0].team.shots.twoA + state.mosirGames[0].team.shots.threeA
+            return state.mosirGames[0].twoA + state.mosirGames[0].threeA
         },
         oFGA(state) {
-            return state.oppGames[0].team.shots.twoA + state.oppGames[0].team.shots.threeA
+            return state.oppGames[0].twoA + state.oppGames[0].threeA
         }
 
 
@@ -996,8 +550,33 @@ export default new Vuex.Store({
         SET_MATCH_TYPE(state, payload) {
             state.matchType = payload
         },
+        CREATE_MATCH(state, payload){
+            state.mosirGames.push(payload)
+        }
 
     },
-    actions: {},
+    actions: {
+        CREATE_MATCH({commit},payload){
+            const mosirGame ={
+                    id: 3,
+                    category: payload.selectMatch,
+                    date: payload.date,
+                    points: payload.points,
+                    oneM: payload.oneM,
+                    oneA: payload.oneA,
+                    twoM: payload.twoM,
+                    twoA: payload.twoA,
+                    threeM: payload.threeM,
+                    threeA: payload.threeA,
+                    assist: payload.assist,
+                    fouls: payload.fouls,
+                    turnovers: payload.turnovers,
+                    dReb: payload.dReb,
+                    ofReb: payload.ofReb,
+                    players: payload.mPlayers
+            }
+            commit('CREATE_MATCH', mosirGame)
+        }
+    },
     modules: {}
 })
