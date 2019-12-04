@@ -2,7 +2,7 @@
     <div class="signle-game">
         <v-container>
             <v-layout wrap>
-                <v-flex xs12 lg8 offset-lg2>
+                <v-flex xs12 lg10 offset-lg1>
                     <v-btn to="/games" text>
                         <v-icon left>mdi-chevron-left</v-icon>
                         Powrót do listy spotkań
@@ -11,7 +11,7 @@
                 </v-flex>
             </v-layout>
             <v-layout wrap>
-                <v-flex xs12 lg8 offset-lg2>
+                <v-flex xs12 lg10 offset-lg1>
                     <v-tabs fixed-tabs color="light-blue lighten-2">
                         <v-tab>
                             <v-icon left>mdi-account-group</v-icon>
@@ -44,13 +44,13 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row mt-4">
                                                 <v-flex md4>
-                                                    {{game.mosir.team.points}}
+                                                    {{game.mosir.points}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Punkty</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{game.opponent.team.points}}
+                                                    {{game.opponent.points}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -66,13 +66,13 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{game.mosir.team.assist}}
+                                                    {{game.mosir.assist}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Asysty</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{game.opponent.team.assist}}
+                                                    {{game.opponent.assist}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -110,24 +110,24 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{game.mosir.team.shots.threeM}}
+                                                    {{game.mosir.threeM}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Trafione za 3</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{game.opponent.team.shots.threeM}}
+                                                    {{game.opponent.threeM}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{game.mosir.team.shots.threeA}}
+                                                    {{game.mosir.threeA}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Oddane za 3</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{game.opponent.team.shots.threeA}}
+                                                    {{game.opponent.threeA}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -143,24 +143,24 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{game.mosir.team.shots.oneM}}
+                                                    {{game.mosir.oneM}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Trafione za 1</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{game.opponent.team.shots.oneM}}
+                                                    {{game.opponent.oneM}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{game.mosir.team.shots.oneA}}
+                                                    {{game.mosir.oneA}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Oddane za 1</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{game.opponent.team.shots.oneA}}
+                                                    {{game.opponent.oneA}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -194,13 +194,13 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row mt-4">
                                                 <v-flex md4>
-                                                    {{game.opponent.team.points}}
+                                                    {{game.opponent.points}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Punkty</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{game.mosir.team.points}}
+                                                    {{game.mosir.points}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -216,14 +216,14 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{game.opponent.team.assist}}
+                                                    {{game.opponent.assist}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Asysty</p>
                                                 </v-flex>
 
                                                 <v-flex md4>
-                                                    {{game.mosir.team.assist}}
+                                                    {{game.mosir.assist}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -262,24 +262,24 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{game.opponent.team.shots.threeM}}
+                                                    {{game.opponent.threeM}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Trafione za 3</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{game.mosir.team.shots.threeM}}
+                                                    {{game.mosir.threeM}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{game.opponent.team.shots.threeA}}
+                                                    {{game.opponent.threeA}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Oddane za 3</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{game.mosir.team.shots.threeA}}
+                                                    {{game.mosir.threeA}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -295,24 +295,24 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{game.opponent.team.shots.oneM}}
+                                                    {{game.opponent.oneM}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Trafione za 1</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{game.mosir.team.shots.oneM}}
+                                                    {{game.mosir.oneM}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{game.opponent.team.shots.oneA}}
+                                                    {{game.opponent.oneA}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Oddane za 1</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{game.mosir.team.shots.oneA}}
+                                                    {{game.mosir.oneA}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -336,7 +336,7 @@
                                 <v-card-text>
                                     <v-data-table
                                             :headers="headers"
-                                            :items="playerStats"
+                                            :items="gameIdPlayerStats"
                                             :items-per-page="14"
                                             class="elevation-1"
                                     ></v-data-table>
@@ -358,25 +358,11 @@
         data: function () {
             return {
                 id: this.$route.params.id,
-                headers: [
-                    {
-                        text: 'Numer',
-                        align: 'left',
-                        value: 'players.number',
-                    },
-                    { text: 'Nazwisko', value: 'players.name', sortable: false },
-                    { text: 'Punkty', value: 'playersStats.points' },
-                    { text: 'Asysty', value: 'playersStats.assist' },
-                    { text: 'Straty', value: 'playersStats.turnovers' },
-                    { text: 'Faule', value: 'playersStats.fouls' },
-                    { text: 'Trafione za 1', value: 'playersStats.shots.oneM' },
-                    { text: 'Próby za 1', value: 'playersStats.shots.oneA' },
-                ]
             };
         },
         computed: {
-            playerStats(){
-              return this.$store.getters.playerStats
+            headers(){
+                return this.$store.state.tableHedaers
             },
             games() {
                 return this.$store.getters.games
@@ -387,6 +373,16 @@
 
                 return vm.games.filter(function (game) {
                     return game.mosir.id == id
+                })
+            },
+            gameIdPlayerStats: function(){
+                var vm = this;
+
+                return vm.gameId[0].mosir.players.map((playerStats , i) =>{
+                    return{
+                        stats: playerStats,
+                        playerDetails: this.players[i]
+                    }
                 })
             },
             players() {
@@ -419,35 +415,35 @@
             mFGPercent() {
                 var vm = this;
                 var percent = vm.mFGM / vm.mFGA * 100
-                return percent.toFixed(1)
+                return percent.toFixed(2)
             },
 
             oFGPercent() {
                 var vm = this;
                 var percent = vm.oFGM / vm.oFGA * 100
-                return percent.toFixed(1)
+                return percent.toFixed(2)
             },
             // Procent za 3
             m3Percent() {
                 var vm = this;
-                var percent3 = vm.gameId[0].mosir.team.shots.threeM / vm.gameId[0].mosir.team.shots.threeA * 100
-                return percent3.toFixed(1)
+                var percent3 = vm.gameId[0].mosir.threeM / vm.gameId[0].mosir.threeA * 100
+                return percent3.toFixed(2)
             },
             o3Percent() {
                 var vm = this;
-                var percent3 = vm.gameId[0].opponent.team.shots.threeM / vm.gameId[0].opponent.team.shots.threeA * 100
-                return percent3.toFixed(1)
+                var percent3 = vm.gameId[0].opponent.threeM / vm.gameId[0].opponent.threeA * 100
+                return percent3.toFixed(2)
             },
             // Procent za 1
             m1Percent() {
                 var vm = this;
-                var percent1 = vm.gameId[0].mosir.team.shots.oneM / vm.gameId[0].mosir.team.shots.oneA * 100
-                return percent1.toFixed(1)
+                var percent1 = vm.gameId[0].mosir.oneM / vm.gameId[0].mosir.oneA * 100
+                return percent1.toFixed(2)
             },
             o1Percent() {
                 var vm = this;
-                var percent1 = vm.gameId[0].opponent.team.shots.oneM / vm.gameId[0].opponent.team.shots.oneA * 100
-                return percent1.toFixed(1)
+                var percent1 = vm.gameId[0].opponent.oneM / vm.gameId[0].opponent.oneA * 100
+                return percent1.toFixed(2)
             }
         }
     };

@@ -188,6 +188,7 @@
                                             </span>
                                         </span>
                                     </td>
+                                    <td>{{mPlayers[index].oneP}}</td>
                                 </tr>
                             <tr>
                                 <td colspan="2" class="text-center font-weight-bold">Total:</td>
@@ -235,11 +236,13 @@
             dReb: 0,
             ofReb: 0,
             mPlayers:[
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -248,11 +251,13 @@
                     dReb: 0,
                     ofReb: 0,
                 },
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -261,11 +266,13 @@
                     dReb: 0,
                     ofReb: 0,
                 },
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -274,11 +281,13 @@
                     dReb: 0,
                     ofReb: 0,
                 },
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -287,11 +296,13 @@
                     dReb: 0,
                     ofReb: 0,
                 },
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -300,11 +311,13 @@
                     dReb: 0,
                     ofReb: 0,
                 },
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -313,11 +326,13 @@
                     dReb: 0,
                     ofReb: 0,
                 },
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -326,11 +341,13 @@
                     dReb: 0,
                     ofReb: 0,
                 },
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -339,11 +356,13 @@
                     dReb: 0,
                     ofReb: 0,
                 },
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -352,11 +371,13 @@
                     dReb: 0,
                     ofReb: 0,
                 },
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -365,11 +386,13 @@
                     dReb: 0,
                     ofReb: 0,
                 },
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -378,11 +401,13 @@
                     dReb: 0,
                     ofReb: 0,
                 },
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -391,11 +416,13 @@
                     dReb: 0,
                     ofReb: 0,
                 },
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -404,11 +431,13 @@
                     dReb: 0,
                     ofReb: 0,
                 },
-                {   points:0,
+                  {   points:0,
                     oneM: 0,
                     oneA: 0,
+                    oneP: 0,
                     twoM: 0,
                     twoA: 0,
+                    twoP: 0,
                     threeM: 0,
                     threeA: 0,
                     assist: 0,
@@ -434,6 +463,8 @@
                         this.oneA++,
                         this.mPlayers[id].oneM++,
                         this.mPlayers[id].oneA++
+                    this.percentCount(prop,id)
+
                 }
                 else if( prop === 2){
                     this.points += prop,
@@ -442,6 +473,7 @@
                         this.twoA++,
                         this.mPlayers[id].twoM++,
                         this.mPlayers[id].twoA++
+                    this.percentCount(prop,id)
                 }
                 else if( prop === 3){
                     this.points += prop,
@@ -450,18 +482,22 @@
                         this.threeA++,
                         this.mPlayers[id].threeM++,
                         this.mPlayers[id].threeA++
+                    this.percentCount(prop,id)
                 }
                 else if (prop === 'at1'){
                     this.oneA++,
                         this.mPlayers[id].oneA++
+                    this.percentCount(prop,id)
                 }
                 else if (prop === 'at2'){
                     this.twoA++,
                         this.mPlayers[id].twoA++
+                    this.percentCount(prop,id)
                 }
                 else if (prop === 'at3'){
                     this.threeA++,
                         this.mPlayers[id].threeA++
+                    this.percentCount(prop,id)
                 }
                 else if (prop === 'assist'){
                     this.assist++,
@@ -483,6 +519,7 @@
                     this.ofReb++,
                         this.mPlayers[id].ofReb++
                 }
+
             },
             removeStats: function (prop, id) {
                 if(prop === 1){
@@ -492,6 +529,7 @@
                         this.oneA--,
                         this.mPlayers[id].oneM--,
                         this.mPlayers[id].oneA--
+                    this.percentCount(prop,id)
                 }
                 else if( prop === 2){
                     this.points -= prop,
@@ -500,6 +538,7 @@
                         this.twoA--,
                         this.mPlayers[id].twoM--,
                         this.mPlayers[id].twoA--
+                    this.percentCount(prop,id)
                 }
                 else if( prop === 3){
                     this.points -= prop,
@@ -508,18 +547,25 @@
                         this.threeA--,
                         this.mPlayers[id].threeM--,
                         this.mPlayers[id].threeA--
+                    this.percentCount(prop,id)
                 }
                 else if (prop === 'at1'){
-                    this.oneA--,
+                    if(this.oneA > this.oneM){
+                        this.oneA--,
                         this.mPlayers[id].oneA--
+                    }
+                    this.percentCount(prop,id)
+
                 }
                 else if (prop === 'at2'){
                     this.twoA--,
                         this.mPlayers[id].twoA--
+                    this.percentCount(prop,id)
                 }
                 else if (prop === 'at3'){
                     this.threeA--,
                         this.mPlayers[id].threeA--
+                    this.percentCount(prop,id)
                 }
                 else if (prop === 'assist'){
                     this.assist--,
@@ -541,6 +587,8 @@
                     this.ofReb--,
                         this.mPlayers[id].ofReb--
                 }
+
+
             },
             onCreateMatch:function () {
                 const mosirGameData = {
@@ -561,8 +609,27 @@
                     mPlayers:this.mPlayers
                 }
                 this.$store.dispatch('CREATE_MATCH', mosirGameData)
+            },
+
+            percentCount: function (prop, id) {
+                if(prop === 1 || prop === 'at1') {
+                    this.mPlayers[id].oneP = this.mPlayers[id].oneM / this.mPlayers[id].oneA * 100
+
+                    return this.mPlayers[id].oneP.toFixed
+                }
+                if(prop === 2 || prop === 'at2') {
+                    this.mPlayers[id].twoP = this.mPlayers[id].twoM / this.mPlayers[id].twoA *100
+
+                     return this.mPlayers[id].twoP.toFixed
+                }
+                if(prop === 3 || prop === 'at3') {
+                this.mPlayers[id].threeP = this.mPlayers[id].threeM / this.mPlayers[id].threeA *100
+
+                    return this.mPlayers[id].threeP.toFixed
+                }
             }
-        }
+
+        },
     };
 </script>
 <style lang="scss">
