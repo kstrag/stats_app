@@ -55,13 +55,13 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{mRebs}}
+                                                    {{game.mosir.dReb + game.mosir.ofReb}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Zbiórki</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{oRebs}}
+                                                    {{game.opponent.dReb + game.opponent.ofReb}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -77,35 +77,57 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{mFGM}}
+                                                    {{game.mosir.turnovers}}
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    <p>Rzuty trafione</p>
+                                                    <p>Straty</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{oFGM}}
-                                                </v-flex>
-                                            </v-layout>
-                                            <v-layout class="text-center team-stat-row">
-                                                <v-flex md4>
-                                                    {{mFGA}}
-                                                </v-flex>
-                                                <v-flex md4>
-                                                    <p>Rzuty oddane</p>
-                                                </v-flex>
-                                                <v-flex md4>
-                                                    {{oFGA}}
+                                                    {{game.opponent.turnovers}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{mFGPercent}}
+                                                    {{game.mosir.fouls}}
+                                                </v-flex>
+                                                <v-flex md4>
+                                                    <p>Faule</p>
+                                                </v-flex>
+                                                <v-flex md4>
+                                                    {{game.opponent.fouls}}
+                                                </v-flex>
+                                            </v-layout>
+                                            <v-layout class="text-center team-stat-row">
+                                                <v-flex md4>
+                                                    {{game.mosir.twoM}}
+                                                </v-flex>
+                                                <v-flex md4>
+                                                    <p>Trafione za 2</p>
+                                                </v-flex>
+                                                <v-flex md4>
+                                                    {{game.opponent.twoM}}
+                                                </v-flex>
+                                            </v-layout>
+                                            <v-layout class="text-center team-stat-row">
+                                                <v-flex md4>
+                                                    {{game.mosir.twoA}}
+                                                </v-flex>
+                                                <v-flex md4>
+                                                    <p>Oddane za 2</p>
+                                                </v-flex>
+                                                <v-flex md4>
+                                                    {{game.opponent.twoA}}
+                                                </v-flex>
+                                            </v-layout>
+                                            <v-layout class="text-center team-stat-row">
+                                                <v-flex md4>
+                                                    {{game.mosir.twoP}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>% skuteczności</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{oFGPercent}}
+                                                    {{game.opponent.twoP}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -132,13 +154,13 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{m3Percent}}
+                                                    {{game.mosir.threeP}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>% za 3</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{o3Percent}}
+                                                    {{game.opponent.threeP}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -165,13 +187,13 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{m1Percent}}
+                                                    {{game.mosir.oneP}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>% za 1</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{o1Percent}}
+                                                    {{game.opponent.oneP}}
                                                 </v-flex>
                                             </v-layout>
                                         </template>
@@ -205,13 +227,13 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{oRebs}}
+                                                    {{game.opponent.dReb + game.opponent.ofReb}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>Zbiórki</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{mRebs}}
+                                                    {{game.mosir.dReb + game.mosir.ofReb}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -228,36 +250,60 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{oFGM}}
+                                                    {{game.opponent.turnovers}}
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    <p>Rzuty trafione</p>
+                                                    <p>Straty</p>
                                                 </v-flex>
 
                                                 <v-flex md4>
-                                                    {{mFGM}}
+                                                    {{game.mosir.turnovers}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{oFGA}}
+                                                    {{game.opponent.fouls}}
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    <p>Rzuty oddane</p>
+                                                    <p>Faule</p>
                                                 </v-flex>
+
                                                 <v-flex md4>
-                                                    {{mFGA}}
+                                                    {{game.mosir.fouls}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{oFGPercent}}
+                                                    {{game.opponent.twoM}}
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    <p>% skuteczności</p>
+                                                    <p>Trafione za 2</p>
+                                                </v-flex>
+
+                                                <v-flex md4>
+                                                    {{game.mosir.twoM}}
+                                                </v-flex>
+                                            </v-layout>
+                                            <v-layout class="text-center team-stat-row">
+                                                <v-flex md4>
+                                                    {{game.opponent.twoA}}
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{mFGPercent}}
+                                                    <p>Odddane za 2</p>
+                                                </v-flex>
+                                                <v-flex md4>
+                                                    {{game.mosir.twoA}}
+                                                </v-flex>
+                                            </v-layout>
+                                            <v-layout class="text-center team-stat-row">
+                                                <v-flex md4>
+                                                    {{game.opponent.twoP}}
+                                                </v-flex>
+                                                <v-flex md4>
+                                                    <p>% za 2</p>
+                                                </v-flex>
+                                                <v-flex md4>
+                                                    {{game.mosir.twoP}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -284,13 +330,13 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{o3Percent}}
+                                                    {{game.opponent.threeP}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>% za 3</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{m3Percent}}
+                                                    {{game.mosir.threeP}}
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
@@ -317,13 +363,13 @@
                                             </v-layout>
                                             <v-layout class="text-center team-stat-row">
                                                 <v-flex md4>
-                                                    {{o1Percent}}
+                                                    {{game.opponent.oneP}}
                                                 </v-flex>
                                                 <v-flex md4>
                                                     <p>% za 1</p>
                                                 </v-flex>
                                                 <v-flex md4>
-                                                    {{m1Percent}}
+                                                    {{game.mosir.oneP}}
                                                 </v-flex>
                                             </v-layout>
                                         </template>
@@ -388,63 +434,6 @@
             players() {
                 return this.$store.state.players
             },
-            //Zbiórki
-            mRebs() {
-                return this.$store.getters.mRebs
-            },
-            oRebs() {
-                return this.$store.getters.oRebs
-            },
-            //Rzuty trafione
-            mFGM() {
-                return this.$store.getters.mFGM
-            },
-
-            oFGM() {
-                return this.$store.getters.oFGM
-            },
-            //Rzuty oddane
-            mFGA() {
-                return this.$store.getters.mFGA
-            },
-
-            oFGA() {
-                return this.$store.getters.oFGA
-            },
-            //Procent rzutów
-            mFGPercent() {
-                var vm = this;
-                var percent = vm.mFGM / vm.mFGA * 100
-                return percent.toFixed(2)
-            },
-
-            oFGPercent() {
-                var vm = this;
-                var percent = vm.oFGM / vm.oFGA * 100
-                return percent.toFixed(2)
-            },
-            // Procent za 3
-            m3Percent() {
-                var vm = this;
-                var percent3 = vm.gameId[0].mosir.threeM / vm.gameId[0].mosir.threeA * 100
-                return percent3.toFixed(2)
-            },
-            o3Percent() {
-                var vm = this;
-                var percent3 = vm.gameId[0].opponent.threeM / vm.gameId[0].opponent.threeA * 100
-                return percent3.toFixed(2)
-            },
-            // Procent za 1
-            m1Percent() {
-                var vm = this;
-                var percent1 = vm.gameId[0].mosir.oneM / vm.gameId[0].mosir.oneA * 100
-                return percent1.toFixed(2)
-            },
-            o1Percent() {
-                var vm = this;
-                var percent1 = vm.gameId[0].opponent.oneM / vm.gameId[0].opponent.oneA * 100
-                return percent1.toFixed(2)
-            }
         }
     };
 </script>

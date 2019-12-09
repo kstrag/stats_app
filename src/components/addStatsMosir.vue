@@ -188,7 +188,6 @@
                                             </span>
                                         </span>
                                     </td>
-                                    <td>{{mPlayers[index].oneP}}</td>
                                 </tr>
                             <tr>
                                 <td colspan="2" class="text-center font-weight-bold">Total:</td>
@@ -211,7 +210,6 @@
                 </v-layout>
             </v-flex>
         </v-layout>
-        {{selectMatch}}
     </v-container>
 </template>
 
@@ -245,6 +243,7 @@
                     twoP: 0,
                     threeM: 0,
                     threeA: 0,
+                    threeP : 0,
                     assist: 0,
                     fouls: 0,
                     turnovers: 0,
@@ -259,6 +258,71 @@
                     twoA: 0,
                     twoP: 0,
                     threeM: 0,
+                    threeA: 0,
+                    threeP : 0,
+                    assist: 0,
+                    fouls: 0,
+                    turnovers: 0,
+                    dReb: 0,
+                    ofReb: 0,
+                },
+                  {   points:0,
+                    oneM: 0,
+                    oneA: 0,
+                    oneP: 0,
+                    twoM: 0,
+                    twoA: 0,
+                    twoP: 0,
+                    threeM: 0,
+                    threeA: 0,
+                    threeP : 0,
+                    assist: 0,
+                    fouls: 0,
+                    turnovers: 0,
+                    dReb: 0,
+                    ofReb: 0,
+                },
+                  {   points:0,
+                    oneM: 0,
+                    oneA: 0,
+                    oneP: 0,
+                    twoM: 0,
+                    twoA: 0,
+                    twoP: 0,
+                    threeM: 0,
+                    threeA: 0,
+                    threeP : 0,
+                    assist: 0,
+                    fouls: 0,
+                    turnovers: 0,
+                    dReb: 0,
+                    ofReb: 0,
+                },
+                  {   points:0,
+                    oneM: 0,
+                    oneA: 0,
+                    oneP: 0,
+                    twoM: 0,
+                    twoA: 0,
+                    twoP: 0,
+                    threeM: 0,
+                    threeA: 0,
+                    threeP : 0,
+                    assist: 0,
+                    fouls: 0,
+                    turnovers: 0,
+                    dReb: 0,
+                    ofReb: 0,
+                },
+                  {   points:0,
+                    oneM: 0,
+                    oneA: 0,
+                    oneP: 0,
+                    twoM: 0,
+                    twoA: 0,
+                    twoP: 0,
+                    threeM: 0,
+                    threeP : 0,
                     threeA: 0,
                     assist: 0,
                     fouls: 0,
@@ -275,6 +339,7 @@
                     twoP: 0,
                     threeM: 0,
                     threeA: 0,
+                    threeP : 0,
                     assist: 0,
                     fouls: 0,
                     turnovers: 0,
@@ -290,6 +355,7 @@
                     twoP: 0,
                     threeM: 0,
                     threeA: 0,
+                    threeP : 0,
                     assist: 0,
                     fouls: 0,
                     turnovers: 0,
@@ -305,6 +371,7 @@
                     twoP: 0,
                     threeM: 0,
                     threeA: 0,
+                    threeP : 0,
                     assist: 0,
                     fouls: 0,
                     turnovers: 0,
@@ -320,6 +387,7 @@
                     twoP: 0,
                     threeM: 0,
                     threeA: 0,
+                    threeP : 0,
                     assist: 0,
                     fouls: 0,
                     turnovers: 0,
@@ -335,6 +403,7 @@
                     twoP: 0,
                     threeM: 0,
                     threeA: 0,
+                    threeP : 0,
                     assist: 0,
                     fouls: 0,
                     turnovers: 0,
@@ -350,6 +419,7 @@
                     twoP: 0,
                     threeM: 0,
                     threeA: 0,
+                    threeP : 0,
                     assist: 0,
                     fouls: 0,
                     turnovers: 0,
@@ -365,6 +435,7 @@
                     twoP: 0,
                     threeM: 0,
                     threeA: 0,
+                    threeP : 0,
                     assist: 0,
                     fouls: 0,
                     turnovers: 0,
@@ -380,66 +451,7 @@
                     twoP: 0,
                     threeM: 0,
                     threeA: 0,
-                    assist: 0,
-                    fouls: 0,
-                    turnovers: 0,
-                    dReb: 0,
-                    ofReb: 0,
-                },
-                  {   points:0,
-                    oneM: 0,
-                    oneA: 0,
-                    oneP: 0,
-                    twoM: 0,
-                    twoA: 0,
-                    twoP: 0,
-                    threeM: 0,
-                    threeA: 0,
-                    assist: 0,
-                    fouls: 0,
-                    turnovers: 0,
-                    dReb: 0,
-                    ofReb: 0,
-                },
-                  {   points:0,
-                    oneM: 0,
-                    oneA: 0,
-                    oneP: 0,
-                    twoM: 0,
-                    twoA: 0,
-                    twoP: 0,
-                    threeM: 0,
-                    threeA: 0,
-                    assist: 0,
-                    fouls: 0,
-                    turnovers: 0,
-                    dReb: 0,
-                    ofReb: 0,
-                },
-                  {   points:0,
-                    oneM: 0,
-                    oneA: 0,
-                    oneP: 0,
-                    twoM: 0,
-                    twoA: 0,
-                    twoP: 0,
-                    threeM: 0,
-                    threeA: 0,
-                    assist: 0,
-                    fouls: 0,
-                    turnovers: 0,
-                    dReb: 0,
-                    ofReb: 0,
-                },
-                  {   points:0,
-                    oneM: 0,
-                    oneA: 0,
-                    oneP: 0,
-                    twoM: 0,
-                    twoA: 0,
-                    twoP: 0,
-                    threeM: 0,
-                    threeA: 0,
+                    threeP : 0,
                     assist: 0,
                     fouls: 0,
                     turnovers: 0,
@@ -613,19 +625,14 @@
 
             percentCount: function (prop, id) {
                 if(prop === 1 || prop === 'at1') {
-                    this.mPlayers[id].oneP = this.mPlayers[id].oneM / this.mPlayers[id].oneA * 100
-
-                    return this.mPlayers[id].oneP.toFixed
+                    this.mPlayers[id].oneP = (this.mPlayers[id].oneM / this.mPlayers[id].oneA * 100).toFixed(1)
                 }
                 if(prop === 2 || prop === 'at2') {
-                    this.mPlayers[id].twoP = this.mPlayers[id].twoM / this.mPlayers[id].twoA *100
-
-                     return this.mPlayers[id].twoP.toFixed
+                    this.mPlayers[id].twoP = (this.mPlayers[id].twoM / this.mPlayers[id].twoA *100).toFixed(1)
                 }
                 if(prop === 3 || prop === 'at3') {
-                this.mPlayers[id].threeP = this.mPlayers[id].threeM / this.mPlayers[id].threeA *100
+                    this.mPlayers[id].threeP = (this.mPlayers[id].threeM / this.mPlayers[id].threeA *100).toFixed(1)
 
-                    return this.mPlayers[id].threeP.toFixed
                 }
             }
 

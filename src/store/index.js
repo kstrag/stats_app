@@ -6,6 +6,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
     state: {
+        teams: ['MKS Pałac Młodzieży Tarnów','UKS Żak Nowy Sącz','MTS Ikar Niepołomice', 'Wisła CANPACK Kraków', 'MLKS-MOS Rzeszów', 'KK UR Kraków'],
         matchType: 'all',
         tableHedaers:[
             {
@@ -583,7 +584,7 @@ export default new Vuex.Store({
                 twoP: 40,
                 threeM: 9,
                 threeA: 25,
-                threeP: 25,
+                threeP: 30,
                 assist: 14,
                 fouls: 18,
                 turnovers: 6,
@@ -593,36 +594,23 @@ export default new Vuex.Store({
             {
                 id: 2,
                 name: 'Wisła Canpak',
-                points: 59,
+                points: 60,
                 oneM: 9,
                 oneA: 13,
-                twoM: 32,
-                twoA: 40,
+                oneP: 70,
+                twoM: 30,
+                twoA: 45,
+                twoP: 45,
                 threeM: 9,
-                threeA: 25,
+                threeA: 22,
+                threeP: 30,
                 assist: 14,
                 fouls: 18,
                 turnovers: 6,
-                dReb: 7,
-                ofReb: 6,
+                dReb: 12,
+                ofReb: 5,
 
             },
-            {
-                id: 3,
-                name: 'Testowa drużyna',
-                points: 47,
-                oneM: 9,
-                oneA: 13,
-                twoM: 32,
-                twoA: 40,
-                threeM: 9,
-                threeA: 25,
-                assist: 14,
-                fouls: 18,
-                turnovers: 6,
-                dReb: 7,
-                ofReb: 6,
-            }
         ]
     },
     getters: {
@@ -634,25 +622,6 @@ export default new Vuex.Store({
                 }
             })
         },
-        mRebs(state) {
-            return state.mosirGames[0].dReb + state.mosirGames[0].ofReb
-        },
-        oRebs(state) {
-            return state.oppGames[0].dReb + state.oppGames[0].ofReb
-        },
-        mFGM(state) {
-            return state.mosirGames[0].twoM + state.mosirGames[0].threeM
-        },
-        oFGM(state) {
-            return state.oppGames[0].twoM + state.oppGames[0].threeM
-        },
-        mFGA(state) {
-            return state.mosirGames[0].twoA + state.mosirGames[0].threeA
-        },
-        oFGA(state) {
-            return state.oppGames[0].twoA + state.oppGames[0].threeA
-        }
-
 
     },
     mutations: {
@@ -661,6 +630,9 @@ export default new Vuex.Store({
         },
         CREATE_MATCH(state, payload){
             state.mosirGames.push(payload)
+        },
+        CREATE_MATCH_OPP(state, payload){
+            state.oppGames.push(payload)
         }
 
     },
@@ -673,13 +645,13 @@ export default new Vuex.Store({
                     points: payload.points,
                     oneM: payload.oneM,
                     oneA: payload.oneA,
-                    oneP: payload.oneM / payload.oneA,
+                    oneP: (payload.oneM / payload.oneA *100).toFixed(1),
                     twoM: payload.twoM,
                     twoA: payload.twoA,
-                    twoP: payload.twoM / payload.twoA,
+                    twoP: (payload.twoM / payload.twoA *100).toFixed(1),
                     threeM: payload.threeM,
                     threeA: payload.threeA,
-                    threeP: payload.threeM / payload.threeA,
+                    threeP: (payload.threeM / payload.threeA *100).toFixed(1),
                     assist: payload.assist,
                     fouls: payload.fouls,
                     turnovers: payload.turnovers,
@@ -688,7 +660,30 @@ export default new Vuex.Store({
                     players: payload.mPlayers
             }
             commit('CREATE_MATCH', mosirGame)
-        }
+        },
+        CREATE_MATCH_OPP({commit},payload){
+            const oppGames ={
+                    id: 3,
+                    name:payload.name,
+                    points: payload.points,
+                    oneM: payload.oneM,
+                    oneA: payload.oneA,
+                    oneP: (payload.oneM / payload.oneA *100).toFixed(1),
+                    twoM: payload.twoM,
+                    twoA: payload.twoA,
+                    twoP: (payload.twoM / payload.twoA *100).toFixed(1),
+                    threeM: payload.threeM,
+                    threeA: payload.threeA,
+                    threeP: (payload.threeM / payload.threeA *100).toFixed(1),
+                    assist: payload.assist,
+                    fouls: payload.fouls,
+                    turnovers: payload.turnovers,
+                    dReb: payload.dReb,
+                    ofReb: payload.ofReb,
+
+            }
+            commit('CREATE_MATCH_OPP', oppGames)
+        },
     },
     modules: {}
 })
