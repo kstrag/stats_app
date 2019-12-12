@@ -621,6 +621,7 @@
                     mPlayers:this.mPlayers
                 }
                 this.$store.dispatch('CREATE_MATCH', mosirGameData)
+                this.$router.push("games")
             },
 
             percentCount: function (prop, id) {

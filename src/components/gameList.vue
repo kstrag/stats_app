@@ -7,7 +7,7 @@
                         :to="'/game/'+ game.mosir.id"
                         class="mb-custom"
                 >
-                    <v-card-text>
+                    <v-card-text v-if="game.mosir != null && game.opponent != null">
                         <v-container>
                             <template v-if="game.mosir.category == 'homeGame'">
                                 <v-layout>

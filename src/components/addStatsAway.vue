@@ -310,7 +310,8 @@
                     dReb:this.dReb,
                     ofReb:this.ofReb,
                 }
-                this.$store.dispatch('CREATE_MATCH_OPP', oppGamaData)
+                this.$store.dispatch('CREATE_MATCH_OPP', oppGamaData),
+                this.$router.push("games")
             },
 
         }
