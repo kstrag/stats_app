@@ -8,6 +8,7 @@ export default new Vuex.Store({
     state: {
         teams: ['MKS Pałac Młodzieży Tarnów','UKS Żak Nowy Sącz','MTS Ikar Niepołomice', 'Wisła CANPACK Kraków', 'MLKS-MOS Rzeszów', 'KK UR Kraków'],
         matchType: 'all',
+        addedMath: false,
         tableHedaers:[
             {
                 text: 'Numer',
@@ -622,6 +623,9 @@ export default new Vuex.Store({
                 }
             })
         },
+        getNotification(state){
+            return state.addedMath
+        }
 
     },
     mutations: {
@@ -633,6 +637,12 @@ export default new Vuex.Store({
         },
         CREATE_MATCH_OPP(state, payload){
             state.oppGames.push(payload)
+        },
+        SHOW_NOTIFICATION(state){
+            state.addedMath = true
+        },
+        HIDE_NOTIFICATION(state){
+            state.addedMath = false
         }
 
     },
@@ -660,6 +670,7 @@ export default new Vuex.Store({
                     players: payload.mPlayers
             }
             commit('CREATE_MATCH', mosirGame)
+            commit('SHOW_NOTIFICATION')
         },
         CREATE_MATCH_OPP({commit},payload){
             const oppGames ={
@@ -683,6 +694,7 @@ export default new Vuex.Store({
 
             }
             commit('CREATE_MATCH_OPP', oppGames)
+            commit('SHOW_NOTIFICATION')
         },
     },
     modules: {}

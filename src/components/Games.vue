@@ -1,5 +1,8 @@
 <template>
     <div class="games">
+        <v-alert v-if="showNotification" type="success" dismissible @click="hideNotification">
+            I'm a success alert.
+        </v-alert>
         <v-container>
             <v-layout wrap>
                 <v-flex xs12 lg8 offset-lg2>
@@ -37,6 +40,14 @@
                 set(value) {
                    this.$store.commit('SET_MATCH_TYPE', value)
                 }
+            },
+            showNotification(){
+                return this.$store.getters.getNotification
+            }
+        },
+        methods:{
+            hideNotification: function () {
+                this.$store.commit('HIDE_NOTIFICATION')
             }
         }
     };
