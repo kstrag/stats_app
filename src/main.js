@@ -22,7 +22,9 @@ new Vue({
           messagingSenderId: '825491127016',
           appId: '1:825491127016:web:1bd646dda740660389275d',
           measurementId: 'G-8E09VSWZ99'
-      })
+      }),
+      this.$store.dispatch('LOAD_MOSIR_GAMES'),
+      this.$store.dispatch('LOAD_OPP_GAMES')
   }
 }).$mount('#app')
 

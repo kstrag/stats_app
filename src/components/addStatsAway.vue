@@ -171,7 +171,6 @@
                             </tr>
                             </tbody>
                         </v-simple-table>
-                        {{name}}
                     </v-flex>
                 </v-layout>
             </v-flex>

@@ -1,7 +1,14 @@
 <template>
     <div class="games">
-        <v-alert v-if="showNotification" type="success" dismissible @click="hideNotification">
-            I'm a success alert.
+        <v-alert v-if="showNotification" type="success">
+           <v-layout>
+               <v-flex> Spotaknie zostało dodane, pojawi się na liście, jeżeli drugi mecz również został dodany.</v-flex>
+               <v-flex class="text-right">
+                   <v-icon @click="hideNotification">
+                       mdi-close
+                   </v-icon>
+               </v-flex>
+           </v-layout>
         </v-alert>
         <v-container>
             <v-layout wrap>
